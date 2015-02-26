@@ -46,4 +46,4 @@ xmlrpc.php
 	drush-6.x/
 	lib/
 	logs/
-	webapps/
+# webapps/
