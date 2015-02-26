@@ -1,0 +1,94 @@
+<?php
+
+/**
+ * Implements hook_menu().
+ */
+function flag_application_menu() {
+  $items['admin/structure/flags/flag_application'] = array(
+    'title' => 'Flag Applications',
+    'description' => 'Find and manage flag applications.',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('flag_application_form'),
+    'access callback' =>'flag_application_permission',
+    //'access arguments' => array('access content'),
+    'weight' => -10,
+    'file' => 'flag_application.admin.inc',
+  );
+  return $items;
+}
+
+/**
+* Implements flag_application_permission().
+*/
+function flag_application_permission() {
+	return TRUE;
+}
+
+
+/**
+* Implements hok_flag_flag
+*/
+function flag_application_flag_flag($flag, $entity_id, $account, $flagging) {
+	dsm($flagging);
+	if ($flag->name=='flag_application') {
+		$result = db_insert('flag_application')
+		->fields(array(
+			'flagging_id'=>$flagging->flagging_id,
+			'status'=>0,
+			))
+		->execute();
+	}
+}
+
+/**
+*implements hook_flag_unflag
+*/
+function hook_flag_unflag($flag, $entity_id, $account, $flagging) {
+	if ($flag->name == 'flag_application') {
+		$deleted = db_delete('flag_application')
+		->condition('flagging_id', $flagging->flagging_id)
+		->execute();
+	}
+}
+
+/**
+ * Implements hook_flag_default_flags
+ */
+function flag_application_flag_default_flags() {
+
+	$flags = array();
+	// Exported flag: "Flag Application".
+	$flags['flag_application'] = array (
+	  'entity_type' => 'node',
+	  'title' => 'Flag Application',
+	  'global' => '0',
+	  'types' => 
+	  array (
+	  ),
+	  'flag_short' => 'Apply',
+	  'flag_long' => 'Apply for this',
+	  'flag_message' => 'Thanks for applying',
+	  'unflag_short' => 'Remove your application',
+	  'unflag_long' => 'Remove your application from the site',
+	  'unflag_message' => 'Your application has been removed',
+	  'unflag_denied_text' => '',
+	  'link_type' => 'toggle',
+	  'weight' => 0,
+	  'show_in_links' => 
+	  array (
+	    'full' => 'full',
+	    'teaser' => 0,
+	    'rss' => 0,
+	    'search_index' => 0,
+	    'search_result' => 0,
+	  ),
+	  'show_as_field' => 1,
+	  'show_on_form' => 0,
+	  'access_author' => '',
+	  'show_contextual_link' => 0,
+	  'i18n' => 0,
+	  'api_version' => 3,
+	);
+	return $flags;
+
+}

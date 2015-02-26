@@ -1,0 +1,65 @@
+name = Burningman Bike Course
+description = Burningman Bike Course - Bootstrap Sub-theme.
+core = 7.x
+base theme = bootstrap
+
+; Regions
+regions[above_nav]     	= 'Above Nav'
+regions[navigation]     = 'Navigation'
+regions[header]         = 'Top Bar'
+regions[highlighted]    = 'Highlighted'
+regions[help]           = 'Help'
+regions[content]        = 'Content'
+regions[sidebar_first]  = 'Primary'
+regions[sidebar_second] = 'Secondary'
+regions[newsletter]     = 'Newsletter'
+regions[belt]    		= 'Belt'
+regions[above_footer]   = 'Above Footer'
+
+
+;**********************************
+; METHOD 1: Bootstrap Source Files
+;**********************************
+; 
+; ; Scripts
+; 
+; scripts[] = 'bootstrap/js/affix.js'
+; scripts[] = 'bootstrap/js/alert.js'
+; scripts[] = 'bootstrap/js/button.js'
+; scripts[] = 'bootstrap/js/carousel.js'
+; scripts[] = 'bootstrap/js/collapse.js'
+; scripts[] = 'bootstrap/js/dropdown.js'
+; scripts[] = 'bootstrap/js/modal.js'
+; scripts[] = 'bootstrap/js/tooltip.js'
+; scripts[] = 'bootstrap/js/popover.js'
+; scripts[] = 'bootstrap/js/scrollspy.js'
+; scripts[] = 'bootstrap/js/tab.js'
+; scripts[] = 'bootstrap/js/transition.js'
+scripts[] = 'bootstrap/dist/js/bootstrap.min.js'
+
+; ; Settings inherited by base theme, uncomment to override.
+; ;settings[toggle_name] = 0
+; ;settings[toggle_search] = 1
+; ; Disable the CDN as we are using our own source files.
+settings[bootstrap_cdn] = ''
+
+exclude[js][] = 'sites/all/themes/bootstrap/js/bootstrap.js'
+
+
+;*************************
+; METHOD 2: Bootstrap CDN
+;*************************
+; 
+; ; Settings inherited by base theme, uncomment to override.
+; settings[toggle_name] = 0
+; settings[toggle_search] = 1
+; settings[cdn_bootstrap] = 1
+; settings[bootstrap_cdn] = 3.0.0
+
+
+; OVERRIDE Stylesheets
+stylesheets[all][] = css/styles.css
+
+; CUSTOM JS
+;scripts[] = 'js/bootstrap-hover-dropdown.min.js'
+scripts[] = 'js/burningmanbikecourse.js'
