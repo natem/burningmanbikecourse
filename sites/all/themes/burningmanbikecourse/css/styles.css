@@ -6404,11 +6404,8 @@ body.front ul.facebook-feed .facebook-feed-picture {
   display: none;
 }
 /* Global Styling */
-/*h1  {
-		color: @brand-bm;
-	}*/
 h1 {
-  color: #a369af;
+  color: #cc0000;
 }
 /* Content */
 .name.navbar-brand {
