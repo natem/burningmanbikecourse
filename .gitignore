@@ -35,15 +35,16 @@ xmlrpc.php
 /scripts
 /themes
 
-	.bash_history
-	.bash_logout
-	.bash_profile
-	.bashrc
-	.emacs
-	.kshrc
-	.zshrc
-	bin/
-	drush-6.x/
-	lib/
-	logs/
-# webapps/
+.bash_history
+.bash_logout
+.bash_profile
+.bashrc
+.emacs
+.kshrc
+.zshrc
+bin/
+drush-6.x/
+lib/
+logs/
+burningmanbikecourse/
+webapps/
