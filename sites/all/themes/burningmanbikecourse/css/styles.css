@@ -6397,15 +6397,18 @@ table .checkbox input[type="checkbox"] {
   padding-right: 15px;
 }
 /* Header */
-/* Global Styling */
-h1 {
-  color: #cc0000;
-}
 body.front .well {
   height: 150px;
 }
 body.front ul.facebook-feed .facebook-feed-picture {
   display: none;
+}
+/* Global Styling */
+/*h1  {
+		color: @brand-bm;
+	}*/
+h1 {
+  color: #a369af;
 }
 /* Content */
 .name.navbar-brand {
