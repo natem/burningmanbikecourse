@@ -43,7 +43,6 @@ xmlrpc.php
 	.kshrc
 	.zshrc
 	bin/
-	burningmanbikecourse/
 	drush-6.x/
 	lib/
 	logs/
