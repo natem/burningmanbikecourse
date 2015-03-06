@@ -149,12 +149,12 @@
 	<p>Welcome to the home of the Burningman Bike Course</p>
   	<div class="row">
   		<div class="col-md-5 well">
-  			<h2>Images</h2>
+  			<a href="/image-gallery"><h2>Image Gallery</h2></a>
   			<p>Checkout pictures from previous years</p>
   		</div>
   		<div class="col-md-5 col-md-offset-1 well">
-  			<h2>Donate</h2>
-  			<p>Give us some money so we can build more things that you can hurt yourself on</p>
+  			<a href="/images-for-2015"><h2>Burningman 2015</h2></a>
+  			<p>Checkout what we are working on for 2015</p>
   		</div>
   	</div>
 </div>

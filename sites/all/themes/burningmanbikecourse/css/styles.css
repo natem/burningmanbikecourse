@@ -6434,5 +6434,34 @@ h1 {
   top: 0;
   left: 0;
 }
+/* Image Gallery */
+body.page-image-gallery .page-header {
+  margin-top: 100px;
+}
+body.page-image-gallery .views-field-field-gallery-images .field-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body.page-image-gallery .views-field-field-gallery-images .field-content {
+  margin-right: 35px;
+}
+body.page-image-gallery .views-field-field-body .field-content {
+  margin-bottom: 25px;
+}
+body.page-images-for-2015 .page-header {
+  margin-top: 100px;
+}
+body.page-images-for-2015 .views-field-field-gallery-images .field-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+body.page-images-for-2015 .views-field-field-gallery-images .field-content {
+  margin-right: 35px;
+}
+body.page-images-for-2015 .views-field-field-body .field-content {
+  margin-bottom: 25px;
+}
 /* Footer */
 /*# sourceMappingURL=styles.css.map */
