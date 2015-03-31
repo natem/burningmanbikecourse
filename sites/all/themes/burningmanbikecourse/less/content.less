@@ -3,33 +3,46 @@
 /* Global Styling */
 
 h1  {
-		color: @brand-bm;
+		color: #cc0000;
 	}
+
+a {
+	color: #000000;
+}
 
 
 /* Content */
 .name.navbar-brand {
-	color: @brand-bm;
+	color: #000000;
 	padding-left: 30px;
 	font-size: 25px;
 }
 
-.navbar-default .navbar-nav li a {
-	color: #cc0000;
+.name.navbar-brand:hover {
+	color: @brand-bm;
 }
 
+.navbar-default .navbar-nav li a {
+	color: #000000;
+}
 
 .navbar-nav {
 	font-size: 20px;
 }
 
 .navbar-default .navbar-nav li a:hover {
-	color: darken(@brand-bm, 20%);
+	color: @brand-bm;
 }
 
 .navbar.container {
 	position: fixed;
 	z-index: 1130;
+	left: 0;
+	right:0;
+}
+
+.content {
+	padding-bottom: 50px;
 }
 
 // Homepage slideshow
@@ -83,5 +96,20 @@ body.page-images-for-2015{
 	.views-field-field-body .field-content {
 		margin-bottom: 25px;
 	} 
+}
+
+/* About Us page */
+
+#about-page-slideshow-block.carousel {
+	margin-bottom: 20px;
+}
+
+/* news and updates page */
+
+body.page-node-2 {
+
+	.page-header {
+		margin-top: 100px;
+	}
 }
 
