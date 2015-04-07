@@ -6474,6 +6474,17 @@ body.page-images-for-2015 .views-field-field-gallery-images .field-content {
 body.page-images-for-2015 .views-field-field-body .field-content {
   margin-bottom: 25px;
 }
+/* home page */
+body.front .views-field-field-update-title {
+  padding-bottom: 7px;
+  font-size: 20px;
+}
+body.front .views-field-field-images img {
+  margin-bottom: 17px;
+}
+body.front .views-field-body {
+  margin-bottom: 16px;
+}
 /* About Us page */
 #about-page-slideshow-block.carousel {
   margin-bottom: 20px;
@@ -6481,6 +6492,22 @@ body.page-images-for-2015 .views-field-field-body .field-content {
 /* news and updates page */
 body.page-node-2 .page-header {
   margin-top: 100px;
+}
+body.page-node-2 .views-row {
+  padding-bottom: 50px;
+}
+body.page-node-2 .views-field-field-update-title {
+  padding-bottom: 7px;
+  font-size: 22px;
+}
+body.page-node-2 .views-field-field-images img {
+  margin-bottom: 17px;
+}
+/* update details page */
+body.node-type-updates .content .field-type-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 /* Footer */
 /*# sourceMappingURL=styles.css.map */
