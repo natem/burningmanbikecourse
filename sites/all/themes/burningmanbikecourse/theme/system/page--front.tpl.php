@@ -152,11 +152,11 @@
 	<p>Welcome to the home of the Burningman Bike Course</p>
   	<div class="row">
   		<div class="col-md-5 well">
-  			<a href="/www/burningmanbikecourse/image-gallery"><h2>Image Gallery</h2></a>
+  			<a href="<?php global $base_url; print $base_url;?>/image-gallery"><h2>Image Gallery</h2></a>
   			<p>Checkout pictures from previous years</p>
   		</div>
   		<div class="col-md-5 col-md-offset-1 well">
-  			<a href="/images-for-2015"><h2>Burningman 2015</h2></a>
+  			<a href="<?php global $base_url; print $base_url;?>/images-for-2015"><h2>Burningman 2015</h2></a>
   			<p>Checkout what we are working on for 2015</p>
   		</div>
   	</div>

@@ -219,7 +219,7 @@ $databases = array (
     array (
       'database' => 'burningmanbikecourse',
       'username' => 'burningmanbike',
-      'password' => 'hqyNP6TA3BJjMk',
+      'password' => '',
       'host' => 'localhost',
       'port' => '3306',
       'driver' => 'mysql',
