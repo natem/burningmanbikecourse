@@ -217,9 +217,9 @@ $databases = array (
   array (
     'default' => 
     array (
-      'database' => 'php_tutorial_kala',
-      'username' => 'root',
-      'password' => 'password',
+      'database' => 'burningmanbikecourse',
+      'username' => 'burningmanbike',
+      'password' => 'hqyNP6TA3BJjMk',
       'host' => 'localhost',
       'port' => '3306',
       'driver' => 'mysql',
