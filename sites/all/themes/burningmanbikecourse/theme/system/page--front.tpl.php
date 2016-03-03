@@ -76,6 +76,9 @@
  */
 ?>
 
+
+
+
 <header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
 
   <div class="bg-glow-outer">
@@ -128,11 +131,11 @@
 
   <div id="rotating-item-wrapper">
     <div class="header-slideshow img-responsive">
-        <img class="rotating-item" src="/sites/all/themes/burningmanbikecourse/images/bikecourselogo1.jpg" width="100%" />
-        <img class="rotating-item" src="/sites/all/themes/burningmanbikecourse/images/topless-bump.jpg" width="100%" />
-        <img class="rotating-item" src="/sites/all/themes/burningmanbikecourse/images/bike-course-1.jpg" width="100%" />
-        <img class="rotating-item" src="/sites/all/themes/burningmanbikecourse/images/kelley-bump.jpg" width="100%" />
-        <img class="rotating-item" src="/sites/all/themes/burningmanbikecourse/images/kurt-teeter.jpg" width="100%" />
+        <img class="rotating-item" src="<?php global $base_url; print $base_url;?>/sites/default/files/bikecourselogo1.jpg" width="100%" />
+        <img class="rotating-item" src="<?php global $base_url; print $base_url;?>/sites/default/files/topless-bump.jpg" width="100%" />
+        <img class="rotating-item" src="<?php global $base_url; print $base_url;?>/sites/default/files/bike-course-1.jpg" width="100%" />
+        <img class="rotating-item" src="<?php global $base_url; print $base_url;?>/sites/default/files/kelley-bump.jpg" width="100%" />
+        <img class="rotating-item" src="<?php global $base_url; print $base_url;?>/sites/default/files/kurt-teeter.jpg" width="100%" />
     </div>
   </div>
 <script type="text/javascript"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script type="text/javascript" src="js/infinite-rotator.js"></script>
@@ -149,7 +152,7 @@
 	<p>Welcome to the home of the Burningman Bike Course</p>
   	<div class="row">
   		<div class="col-md-5 well">
-  			<a href="/image-gallery"><h2>Image Gallery</h2></a>
+  			<a href="/www/burningmanbikecourse/image-gallery"><h2>Image Gallery</h2></a>
   			<p>Checkout pictures from previous years</p>
   		</div>
   		<div class="col-md-5 col-md-offset-1 well">
